@@ -22,13 +22,12 @@ export default async function Home() {
     .then((res) => res.json())
     .catch((e) => console.log(e));
 
-    const Square = ({color}) => {
+    const Square = () => {
       return (
           <div 
               style={{
                   width: 600, 
                   height: 500, 
-                  backgroundColor: color,
                   borderRadius: '25px'
               }}
           ></div>
@@ -50,7 +49,7 @@ export default async function Home() {
         >
           Paste your Essay
         </h1>
-        <Square size="100px" color="grey" />
+        <Square/>
 
       </div>
 
