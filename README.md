@@ -1,10 +1,10 @@
-<a href="https://precedent.dev">
-  <img alt="Precedent – Building blocks for your Next project" src="https://precedent.dev/opengraph-image" />
-  <h1 align="center">Precedent</h1>
+<a href="AIEssaytitle.com">
+  <img alt="AIEssayTile – Making Better Titles with AI" src="https://precedent.dev/opengraph-image" />
+  <h1 align="center">AIEssayTitle</h1>
 </a>
 
 <p align="center">
-  Building blocks for your Next project
+  Making Better Titles with AI
 </p>
 
 <p align="center">
@@ -26,8 +26,7 @@
 
 ## Introduction
 
-Precedent is an opinionated collection of components, hooks, and utilities for your Next.js project.
-
+AIEssayTitle.com is an AI interface to generate you better Essay Titles
 ## One-click Deploy
 
 You can deploy this template to Vercel with the button below:

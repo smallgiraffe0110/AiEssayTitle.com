@@ -2,8 +2,8 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Precedent - Building blocks for your Next.js project";
-export const contentType = "image/png";
+export const alt = "AIEssayTitle - Creating better Essay Titles using AI";
+export const contentType = "logo/png";
 
 export default async function OG() {
   const sfPro = await fetch(
@@ -42,7 +42,7 @@ export default async function OG() {
             letterSpacing: "-0.02em",
           }}
         >
-          Precedent
+          AIEssayTitle
         </h1>
       </div>
     ),
