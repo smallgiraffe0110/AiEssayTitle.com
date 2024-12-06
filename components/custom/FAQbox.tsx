@@ -1,13 +1,13 @@
 "use client";
 import { useState } from "react";
 
-type FeatureBoxProps = {
+type FAQBox = {
   title: string;
   description: string;
   icon: string;
 };
 
-const FeatureBox: React.FC<FeatureBoxProps> = ({ title, description, icon}) => {
+const FAQBox: React.FC<FAQBox> = ({ title, description, icon}) => {
   const [isOpen, setIsOpen] = useState(false);
   
   const toggleAnswer = () => {
@@ -47,4 +47,4 @@ const FeatureBox: React.FC<FeatureBoxProps> = ({ title, description, icon}) => {
 );
 };
     
-export default FeatureBox;
+export default FAQBox;
