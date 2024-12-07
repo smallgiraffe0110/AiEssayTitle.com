@@ -9,6 +9,10 @@ import FAQBox from "@/components/custom/FAQbox";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import FeatureBox from "@/components/custom/Featurebox";
 import FeaturesSection from "@/components/custom/FeaturesSection";
+import EssayGeneratorForm from "@/components/custom/EssayGeneratorForm";
+
+require('dotenv').config();
+
 export default async function Home() {
   const { stargazers_count: stars } = await fetch(
     "https://api.github.com/repos/steven-tey/precedent",
@@ -55,15 +59,13 @@ export default async function Home() {
           Paste your Essay 
         </h1>
       </div>
-
-
-
+      <div className="z-10 w-full max-w-3xl px-5 xl:px-0">
+          <EssayGeneratorForm></EssayGeneratorForm>
+      </div>
       <div className="z-10 w-full max-w-xl px-5 xl:px-0">
           <h2 className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm [text-wrap:balance] md:text-5xl md:leading-[5rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}>Features</h2>
       </div>
-     
-
       <section className=" z-10 p-8 animate-fade-up bg-gradient-to-br" style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}>
       <FeaturesSection>
         <FeatureBox

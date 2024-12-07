@@ -16,10 +16,10 @@ const FAQBox: React.FC<FAQBox> = ({ title, description, icon}) => {
 
   return (
     <div
-    className="feature-box bg-gray-100 p-4 rounded-xl shadow-md max-w-3xl my-4 group hover:bg-gray-200 flex flex-col cursor-pointer"
+    className="feature-box bg-gray-100 p-4 rounded-xl shadow-md max-w-3xl my-4 group hover:bg-gray-200 flex flex-col cursor-pointer transition-all duration-300"
     onClick={toggleAnswer}
   >
-    <div className="flex w-full items-center"> {/* Flex container for title and button */}
+    <div className="flex w-full items-center transition-all duration-300"> {/* Flex container for title and button */}
       <i className={`${icon} text-xl text-gray-700 mr-2`} />
       <h3 className="text-lg font-semibold flex-grow">{title}</h3>
       <button
