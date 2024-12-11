@@ -56,7 +56,7 @@ export default async function Home() {
           className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm [text-wrap:balance] md:text-6xl md:leading-[5rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
-          Paste your Essay 
+          Paste Your Essay 
         </h1>
       </div>
       <div className="z-10 w-full max-w-3xl px-5 xl:px-0">
