@@ -10,7 +10,7 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
   dangerouslyAllowBrowser: true,
 });
-export const runtime = 'edge';
+
 const EssayGeneratorForm: React.FC = () => {
   const [essay, setEssay] = useState(""); // Essay input
   const [charCount, setCharCount] = useState(0); // Character count
