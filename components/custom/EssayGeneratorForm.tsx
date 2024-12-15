@@ -7,7 +7,7 @@ import Slider from "./Slider";
 const openai = new OpenAI({
   organization: "org-A48iEvLPTN3BFf2bF8PSEHHN",
   project: "proj_5EQ6kUG5AHZy8VoamNGPHLKr",
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: process.env.OPENAI_API_KEY || '',
   dangerouslyAllowBrowser: true,
 });
 
