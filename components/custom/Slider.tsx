@@ -31,6 +31,7 @@ const Slider: React.FC<SliderProps> = ({ onValueChange }) => {
         className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-gray-400"
         style={{
           accentColor: value === 1 ? "rgb(79,70,229)" : "rgb(129,140,248)",
+          background: `linear-gradient(to right, rgb(79,70,229) ${((value - 1) / 9) * 100}%, rgb(229,229,229) ${((value - 1) / 9) * 100}%)`,
         }}
       />
 
