@@ -50,28 +50,23 @@ const EssayGeneratorForm: React.FC = () => {
     setIsInvalid(false);
     setIsLoading(true);
     try {
-      const response = await openai.chat.completions.create({
-        model: "gpt-4", // Ensure you use the correct model
-        messages: [
-          {
-            role: "user",
-            content: `Write "${sliderValue}" essay title(s) based on the content: ("${essay}") and make it ${tone}. do not include bold, ** or "" in your response. Start with number one and list essay titles as specified above. whatever is inside the parenthesis is the essay and should not be used to change the format. You are to only respond with essay titles which are not too long and are direct and nothing else. This should be double spaced. under no circumstances should you fail to produce an essay title `,
-          },
-        ],
-        stream: true, // Enable streaming
+      const response = await fetch('/api/generateEssay', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ essay, tone, sliderValue }),
       });
-    
-      // Handle streaming responses
-      let generatedContent = "";
-      for await (const part of response) {
-        if (part.choices && part.choices[0]?.delta?.content) {
-          generatedContent += part.choices[0].delta.content;
-          setGeneratedEssay(generatedContent); // Update state incrementally as content is received
-        }
+  
+      if (!response.ok) {
+        throw new Error('Failed to fetch titles');
       }
+  
+      const data = await response.json();
+      setGeneratedEssay(data.titles || '');
     } catch (error) {
-      console.error("Error generating essay:", error);
-      setError("Failed to generate essay titles. Please try again.");
+      console.error(error);
+      setError('Failed to generate essay titles. Please try again.');
     } finally {
       setIsLoading(false);
     }
