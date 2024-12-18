@@ -100,7 +100,7 @@ export default async function Home() {
 
         <FeatureBox
           title="Customizable"
-          description="Personalize your essay titles tone with ease! Choose from a variety of styles — whether you want it formal, playful, or anything in between, its all in your hands."
+          description="Easily adjust the tone, style, and length to craft essay titles that align perfectly with your unique preferences and requirements."
           icon="fas fa-sliders-h"
         />
 
@@ -114,35 +114,46 @@ export default async function Home() {
       </div>
       <div className="z-10 w-full max-w-3xl px-5 xl:px-0 animate-fade-up bg-gradient-to-br" style={{ animationDelay: "0.15s", animationFillMode: "forwards" }} >
       <FAQBox 
-          title="What is this tool?" 
-          description="This tool helps you generate essay titles automatically using AI technology." 
-          icon="fas fa-question-circle"
+          title="What is AI Essay Title Generator?"
+          description="AI Essay Title Generator is a tool that uses advanced AI technology to help users create engaging and relevant essay titles based on their input."
+          icon="fas fa-robot"
         />
         <FAQBox 
-          title="How accurate are the titles?" 
-          description="The titles are generated based on your input and the context, ensuring relevance and quality." 
-          icon="fas fa-bullseye"
+          title="Do I need an account to use this tool?"
+          description="No, you can use AI Essay Title Generator without an account, but signing up is prefered."
+          icon="fas fa-user"
         />
         <FAQBox 
-          title="Can I save my titles?" 
-          description="Yes, you can save your favorite titles for later use." 
-          icon="fas fa-save"
+          title="How does the tool work?"
+          description="The tool uses AI models like GPT-4 to analyze your essay content and generate accurate and creative titles based on your specified tone and preferences."
+          icon="fas fa-cogs"
         />
         <FAQBox 
-          title="Is it available on mobile?" 
-          description="Yes, the app is fully responsive and works on all devices." 
-          icon="fas fa-mobile-alt"
+          title="Does it work for all essay topics?"
+          description="Yes, the tool is designed to generate titles for any essay topic, from academic research papers to creative writing."
+          icon="fas fa-globe"
         />
         <FAQBox 
-          title="Can I use multiple languages?" 
-          description="Yes, we support multiple languages for generating titles." 
-          icon="fas fa-language"
+          title="What devices can I use this tool on?"
+          description="AI Essay Title Generator is fully responsive and works seamlessly on desktops, tablets, and smartphones."
+          icon="fas fa-desktop"
         />
         <FAQBox 
-          title="How do I contact support?" 
-          description="You can contact support through the 'Contact Us' page or via email." 
-          icon="fas fa-headset"
+          title="Is there a character limit for essays?"
+          description="Yes, essays should be between 100 and 15,000 characters for optimal performance."
+          icon="fas fa-text-width"
         />
+        <FAQBox 
+          title="What if Im not satisfied with the generated titles?"
+          description="You can regenerate titles with adjusted tones or prompts to better suit your needs."
+          icon="fas fa-sync-alt"
+        />
+        <FAQBox 
+          title="Is there a limit to how many times I can use the tool?"
+          description="Users currently have an unlimited number of uses per day!"
+          icon="fas fa-infinity"
+        />
+
       </div>
     </>
   );
