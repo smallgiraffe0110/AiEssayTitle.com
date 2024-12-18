@@ -78,8 +78,8 @@ importers:
         specifier: 14.3.0-canary.57
         version: 14.3.0-canary.57(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       openai:
-        specifier: ^4.76.0
-        version: 4.76.1(zod@3.23.8)
+        specifier: ^4.77.0
+        version: 4.77.0(zod@3.23.8)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -2183,8 +2183,8 @@ packages:
   once@1.4.0:
     resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
 
-  openai@4.76.1:
-    resolution: {integrity: sha512-ci63/WFEMd6QjjEVeH0pV7hnFS6CCqhgJydSti4Aak/8uo2SpgzKjteUDaY+OkwziVj11mi6j+0mRUIiGKUzWw==}
+  openai@4.77.0:
+    resolution: {integrity: sha512-WWacavtns/7pCUkOWvQIjyOfcdr9X+9n9Vvb0zFeKVDAqwCMDHB+iSr24SVaBAhplvSG6JrRXFpcNM9gWhOGIw==}
     hasBin: true
     peerDependencies:
       zod: ^3.23.8
@@ -5263,7 +5263,7 @@ snapshots:
     dependencies:
       wrappy: 1.0.2
 
-  openai@4.76.1(zod@3.23.8):
+  openai@4.77.0(zod@3.23.8):
     dependencies:
       '@types/node': 18.11.18
       '@types/node-fetch': 2.6.12
