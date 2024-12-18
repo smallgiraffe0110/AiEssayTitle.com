@@ -12,6 +12,9 @@ export const metadata = {
   description:
     "Generating your Essays better with AI",
   metadataBase: new URL("https://aiessaytitle.com"),
+  icons: {
+    icon: '/favicon.ico',
+  }
 };
 
 export default async function RootLayout({
