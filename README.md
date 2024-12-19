@@ -4,12 +4,6 @@
   Making Better Titles with AI
 </p>
 
-<p align="center">
-  <a href="#introduction"><strong>Introduction</strong></a> ·
-  <a href="#one-click-deploy"><strong>One-click Deploy</strong></a> ·
-  <a href="#tech-stack--features"><strong>Tech Stack + Features</strong></a> ·
-  <a href="#author"><strong>Author</strong></a>
-</p>
 <br/>
 
 ## Introduction
